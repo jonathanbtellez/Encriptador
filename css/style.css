@@ -97,7 +97,7 @@
 
 .mensaje-encriptado{
     position: absolute;
-    width: 30%;
+    width: 26%;
     height: 85%;
     left: 65%;
     top: 40px;
@@ -251,10 +251,15 @@ footer{
         width: 95%;
         height: 500px;
      }
-     .mensaje-transformado{
+    .mensaje-transformado{
         width: auto;
     }
     #imagen-muñeco{
-        left: 10%;
+        left: 19%;
+        text-align: center;
+    }
+    .ningun-mensaje, .texto-informativo{
+        text-align: center;
+        left: 8%;
     }
 }
