@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body class ="background-pagina">
+        <header>
+            <div  class="caja-logo">
+                <h1><img class="logo" src="imagenes/logo.png" alt="Logo"></h1>
+            </div>
+        </header>
+
+        <main> 
+
+            <seccion class ="sec-mensaje-introducido">
+                <form id="form-mensaje-introducido">
+                    <label for="mensaje-introducido" ></label>
+                    <input type="text" id ="mensaje-introducido" name="mensaje"  placeholder="Ingrese el texto aqui" class="campo-mensaje-introducido">
+                    
+                    <div class="caja-botones">
+                        <button id="encriptar-mensaje" class="boton-encriptar">Encriptar</button>
+                        <button id ="Desencriptar"  class="boton-desencriptar">Desencriptar</button>
+                    </div>
+                </form>
+            </seccion>
+
+            <section class="caja-indicaciones">
+                <img class="imagen-exclamacion" src="imagenes/exclamacion.png" alt="Signo de exclamacion"><p class="texto-indicaciones">Solo letras mayusculas y sin acentos</p>
+            </section>
+            <section class="mensaje-encriptado">
+                <ul id = "insetar-mensaje" class = "mensaje-transformado" >
+                    <li>
+                        <p></p>
+                    </li>
+                </ul>
+                <ul>
+                    <li><img id = "imagen-muñeco" src="imagenes/muñeco.png" alt="Imagen muñeca"></li>
+                    <li><p id = "ningun-mensaje-encontrado" class="ningun-mensaje">Ningún mensaje fue encontrado</p></li>
+                    <li><p id = "mensaje-ingrese-texto"class="texto-informativo">Ingrese el texto que desea encriptar o desencriptar</p></li>  
+                    <li><button id = "copiar" class="copiar-mensaje">Copiar</button>
+                    </li>         
+                </ul>
+            </section>
+
+        </main>
+
+
+        <footer>
+            <img class="imagen-pie-pagina" src="imagenes/logo.png" alt="logo">
+            <p class="piePagina"><a href="https://www.linkedin.com/in/jonatell/">Encriptador pulse aqui para mas información</p>
+        </footer>
+
+        <script src="js/encriptar.js"></script>
+        <script src="js/desencriptar.js"></script>
+        <script src ="js/copiar.js"></script>
+    </body>

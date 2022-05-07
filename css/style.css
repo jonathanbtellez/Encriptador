@@ -1,0 +1,260 @@
+.background-pagina{
+    background: #f5e4e4;
+    display: grid;
+    min-height: 120vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.caja-logo{
+    width: 90%;
+    position: relative;
+    margin: 40px auto;
+}
+
+.logo {
+    left: 36.67%;
+    right: 37.43%;
+    top: 40px;
+    bottom: 0%;
+    filter: hue-rotate(135deg);
+}
+
+.campo-mensaje-introducido{
+    position: absolute;
+    width: 50%;
+    height: 48px;
+    left: 13%;
+    top: 13%;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 30px;
+    background: #f5e4e4;
+}
+
+::placeholder{
+    color: #5a0b0b;
+    border: none;
+}
+
+.caja-botones{
+    position: absolute;
+    width: 50%;
+    height: 67px;
+    left: 13%;
+    top: 80%;
+}
+
+.boton-encriptar, .boton-desencriptar{
+    display: inline-block;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    position: static;
+    width: 47%;
+    height: 67px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.boton-encriptar{
+    background: #5a0b0b;
+    border-radius: 24px;
+    color: #f5e4e4;
+}
+
+.boton-encriptar:hover{
+    background: #380404;
+    transform: scale(1.1);
+}
+
+.boton-desencriptar{
+        background: #f5e4e4;
+        border-radius: 24px;
+        color: #5a0b0b;
+        margin:0 0 0 5%;
+}
+
+.boton-desencriptar:hover{
+    background: #ffffff;
+    transform: scale(1.1);
+}
+
+.caja-indicaciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    width: 45%;
+    height: 18px;
+    left: 15%;
+    top: 75%;
+}
+
+.texto-indicaciones{
+    color: #5a0b0b;
+}
+
+.mensaje-encriptado{
+    position: absolute;
+    width: 30%;
+    height: 85%;
+    left: 65%;
+    top: 40px;
+    /* White */
+    background: #FFFFFF;
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.mensaje-transformado{
+    width: 330px;
+    height: 150px;
+    position: relative;
+    border-radius: 32px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.ajustar-mensaje{
+    overflow-wrap: break-word;
+}
+
+#imagen-muñeco{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    filter: hue-rotate(135deg);
+}
+
+.ningun-mensaje{
+    position: absolute;
+    padding: 30px;
+    top: 63%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+}
+
+.texto-informativo{
+    position: absolute;
+    padding: 15px;
+    top: 75%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    /* or 24px */
+
+    text-align: center;
+}
+
+.copiar-mensaje{
+    position: absolute;
+    width: 90%;
+    height: 66px;
+    top: 87%;
+    left: 18px;
+    transition: 1s all;
+    cursor:pointer;
+    background: #5a0b0b;
+    border-radius: 24px;
+    color: #f5e4e4;
+}
+
+.copiar-mensaje:hover{
+    background: #380404;
+    transform: scale(1.1);
+}
+
+.fadeOut{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+footer{
+    text-align: center;
+    background: #380404;
+    padding:40px;
+}
+
+.imagen-pie-pagina{
+    filter: invert(1) sepia(1) hue-rotate(126deg) saturate(20%);
+}
+
+.piePagina a{
+    text-decoration: none;
+    color:#f5e4e4;
+    font: 2em;
+    
+}
+@media screen and (max-width:850px){
+    .boton-encriptar, .boton-desencriptar{
+        width: 40%;
+        display: inline-block;
+        left: 5px;
+        height: auto;
+    }
+    .mensaje-transformado{
+        width: auto;
+    }
+    .mensaje-encriptado{
+        width: 40%;
+    }
+
+    #imagen-muñeco{
+        width: 220px;
+        left: 5%;
+    }
+
+    .ningun-mensaje{
+        font-size: 20px;
+    }
+
+    footer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:450px){   
+    .background-pagina{
+        min-height: 180vh;
+    }
+    .campo-mensaje-introducido,.caja-botones{
+        width: 95%;
+        left: 5px;
+    }
+    .caja-indicaciones{
+        top: 55%; 
+        width: 95%;
+    }
+
+    .caja-botones{
+        top: 60%;
+    }
+    .boton-encriptar, .boton-desencriptar{
+        width: 46%;
+        display: inline-block;
+        left: 5px;
+        height: auto;
+
+    }
+    .mensaje-encriptado{
+        left: 5%;
+        top: 80%;
+        width: 95%;
+        height: 500px;
+     }
+     .mensaje-transformado{
+        width: auto;
+    }
+    #imagen-muñeco{
+        left: 10%;
+    }
+}
