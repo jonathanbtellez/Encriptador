@@ -30,33 +30,16 @@ botonDesencriptar.addEventListener("click", function(event){
 
 function mensajeDesencriptado(mensaje){
     mensaje = mensaje.toLowerCase();
-    var regla = '';
-    for (var i = 0; i < mensaje.length;i++) {
-      switch(mensaje[i]) {
-      case 'e': 
-        if (mensaje[i + 4] === 'r') { regla += 'e'; i += 4; }
-        else { return false; }
-        break;
-      case 'i': 
-        if (mensaje[i + 3] === 's') { regla += 'i'; i += 3; }
-        else { return false; }
-        break;
-      case 'a': 
-        if (mensaje[i + 1] === 'i') { regla += 'a'; i += 1; }
-        else { return false; }
-        break;
-      case 'o': 
-        if (mensaje[i + 3] === 'r') { regla += 'o'; i += 3; }
-        else { return false; }
-        break;
-      case 'u': 
-        if (mensaje[i + 3] === 't') { regla += 'u'; i += 3; }
-        else { return false; }
-        break;
-      default:
-        regla += mensaje[i];
-      }
+
+    var matriz = [["enter","e"],["imes","i"],["ai","a"],["ober","o"],["ufat","u"]];
+
+    for(var i = 0; i < matriz.length; i++){
+        if (mensaje.includes(matriz[i][0])){
+            mensaje = mensaje.replaceAll(matriz[i][0], matriz[i][1]);
+        }
     }
-    return regla;
+
+    return mensaje; 
+    
 }
 

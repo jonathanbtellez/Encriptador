@@ -44,13 +44,15 @@ function mensajeEncriptado(mensaje){
         }
     }
 
+
+
     return mensaje;
 }
 
 
 
 function insertarMensaje(mensaje){
-
+    
     form = document.querySelector("#insetar-mensaje");
     
     mensajeNuevoLi = document.createElement("li");
@@ -60,7 +62,6 @@ function insertarMensaje(mensaje){
     
     mensajeNuevoLi.appendChild(mensajeNuevoP);
     form.appendChild(mensajeNuevoLi);
-
     
     return mensajeNuevoP;
 }
