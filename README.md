@@ -24,3 +24,5 @@ gaitober" => "gato"
 La página debe tener campos para
 inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
 El resultado debe ser mostrado en la pantalla.
+
+¡¡ AUN NO ES CORRECTAMENTE RESPONSIVE!!
