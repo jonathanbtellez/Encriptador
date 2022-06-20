@@ -21,4 +21,3 @@ botonCopiar.addEventListener("click",function(event){
     i=0;
     
 });
-
