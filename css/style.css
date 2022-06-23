@@ -12,6 +12,7 @@ header{
     max-width: 1000px;
     padding: 10px;
     margin:auto;
+    margin-bottom:25px;
 }
 .caja-logo .logo{
     filter: hue-rotate(135deg);
